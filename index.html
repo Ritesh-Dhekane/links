@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Dhekane | Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg: white;
+            --card-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            --hover-bg: #f0f0f0;
+            --theme-toggle-bg: #333;
+            --theme-toggle-color: white;
+        }
+
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #f5f5f5;
+            --card-bg: #1e1e1e;
+            --card-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            --hover-bg: #2a2a2a;
+            --theme-toggle-bg: #f5f5f5;
+            --theme-toggle-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--theme-toggle-bg);
+            color: var(--theme-toggle-color);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--card-shadow);
+            z-index: 100;
+        }
+        
+        .profile {
+            margin: 40px auto 20px;
+        }
+        
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--text-color);
+            box-shadow: var(--card-shadow);
+        }
+        
+        h1 {
+            margin: 15px 0 5px;
+            font-size: 28px;
+        }
+        
+        .bio {
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .link {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background-color: var(--hover-bg);
+        }
+        
+        .link i {
+            font-size: 20px;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            color: var(--text-color);
+            font-size: 24px;
+            transition: all 0.3s ease;
+            opacity: 0.7;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .share-container {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .share-title {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .share-button {
+            background-color: var(--hover-bg);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .share-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <div class="container">
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/124091983?v=4" alt="Ritesh Dhekane" class="profile-pic">
+            <h1>Ritesh Dhekane</h1>
+            <p class="bio">Web Developer | Open Source Contributor</p>
+        </div>
+        
+        <div class="links">
+            <a href="https://riteshdhekane.netlify.app/" class="link" target="_blank">
+                <i class="fas fa-briefcase"></i> My Portfolio
+            </a>
+            <a href="https://github.com/Ritesh-Dhekane" class="link" target="_blank">
+                <i class="fab fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://in.linkedin.com/in/riteshdhekane" class="link" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+            <a href="https://www.instagram.com/ritesh._.d" class="link" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:ritesh.dhekane@outlook.com?subject=Hello%20Ritesh&body=Hi%20Ritesh%2C%0A%0AI%20got%20your%20mail%20from%20your%20linktree.%0A%0A" class="link">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://github.com/Ritesh-Dhekane" class="social-icon" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://in.linkedin.com/in/riteshdhekane" class="social-icon" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/ritesh._.d" class="social-icon" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:ritesh.dhekane@outlook.com" class="social-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        
+        <div class="share-container">
+            <div class="share-title">Share my profile</div>
+            <div class="share-buttons">
+                <button class="share-button" onclick="shareOnTwitter()" title="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button class="share-button" onclick="shareOnLinkedIn()" title="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </button>
+                <button class="share-button" onclick="copyToClipboard()" title="Copy link">
+                    <i class="fas fa-link"></i>
+                </button>
+                <button class="share-button" onclick="shareOnWhatsApp()" title="Share on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+        
+        // Check for saved theme preference or use preferred color scheme
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Share functions
+        function shareOnTwitter() {
+            const url = `https://twitter.com/intent/tweet?text=Check%20out%20Ritesh%20Dhekane's%20links%20${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank');
+        }
+        
+        function shareOnLinkedIn() {
+            const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank');
+        }
+        
+        function shareOnWhatsApp() {
+            const url = `https://wa.me/?text=Check%20out%20Ritesh%20Dhekane's%20links%20${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank');
+        }
+        
+        function copyToClipboard() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Link copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
